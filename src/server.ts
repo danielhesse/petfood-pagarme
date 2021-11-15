@@ -12,7 +12,7 @@ const server = express();
 mongoose.connect('mongodb://localhost/petfood');
 
 server.use(cors());
-server.use(morgan('dev'));
+// server.use(morgan('dev'));
 server.use(express.json());
 server.use(routes);
 

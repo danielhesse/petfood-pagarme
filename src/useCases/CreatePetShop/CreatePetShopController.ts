@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 
 import { CreatePetShop } from './CreatePetShop';
 
-class CreateRecipientController {
+class CreatePetShopController {
   async handle(request: Request, response: Response) {
     const { bank_data, petshop } = request.body;
 
@@ -24,4 +24,4 @@ class CreateRecipientController {
   }
 }
 
-export { CreateRecipientController };
+export { CreatePetShopController };
